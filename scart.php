@@ -1,6 +1,6 @@
 <?php
    include 'functions.php';
-   
+
    session_start();
    
    if(!isset($_SESSION['cart'])){
@@ -28,7 +28,7 @@
    }
    
    if(isset($_GET['query'])) {
-       include 'wmapi.php';
+       include 'database.php';
        $items = getProducts($_GET['query']);
    }
 ?>
